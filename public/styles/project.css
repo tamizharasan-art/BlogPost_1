@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family:Bradley Hand, cursive ;
+}
+.main_section{
+    background-color: #F1CA7F;
+    padding: 70px 0;
+}
+.header_section{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    font-family: Apple Chancery, cursive;
+    color: #BA704F;
+}
+.common_button{
+    color: white;
+    padding: 10px;
+    background-color: #BA704F;
+    border-radius: 10px;
+    font-size: large;
+    border:none;
+    transition: 0.5s;
+    font-size: 1.5em;
+}
+.common_button:hover{
+    padding: 15px;
+    background-color: #F1CA7F;
+}
+.empty_page_text{
+    text-align: center;
+    /* margin: 60% 0; */
+    color: white;
+}
+.footer_section{
+    background-color: white;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 0px ;
+}
+
+.footer_container > h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #BA704F;
+}
+.contact_list{
+    list-style: none;
+    font-size: 1em;
+}
+.contact_list > a >li{
+    color: #BA704F;
+}
+.fa-battle-net{
+    margin: 15px 0;
+}
+.social_logo{
+    text-align: center;
+}
+.social_logo > a{
+    color:crimson;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+.card_container{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 350px;
+    transition: 1s;
+    border: 3px solid #BA704F;
+    border-radius: 10px;
+    /* height: 500px; */
+}
+.image_container{
+    width: 100%;
+    height: 200px;
+    /* object-fit: contain; */
+}
+.player_img{
+    width: 100%;
+    height: 100%;
+    border-radius:5px;
+}
+.player_name{
+    color: white;
+    font-size: 2em;
+    margin-top: 15px;
+    text-align: center;
+}
+.player_description{
+    font-size: 1.25em;
+    margin-top:15px;
+    text-align: center;
+}
+.button_container{
+    margin:15px 0;
+    text-align: center;
+}
+.edit_button{
+    margin-right: 25px;
+}
+.card_container:hover{
+    border-radius: 10px;
+    border:white 2px solid;
+    padding: 10px;
+    box-shadow: 3px 3px 6px 6px white;
+    transform: translate(-10px,-10px);
+}
+.empty_message{
+    background-color: #F1CA7F;
+    padding: 40% 0;
+}
+
+.form_bg{
+    background-color: #F1CA7F;
+    padding: 40% 0;
+}
+.postForm> *{
+    display: block;
+}
+.postForm{
+    width: 50%;
+    background-color: white;
+    padding: 50px;
+    margin:0 auto;
+}
+.text{
+    color: #BA704F;
+    margin-top: 20px ;
+    margin-bottom: 10px;
+}
+
+#input_field{
+    outline: none;
+    width: 100%;
+    padding: 5px 0;
+}
+.submitButton{
+    margin-top: 20px;
+}
+
+@media (min-width : 800px){
+    .main_section{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1200px){
+    .empty_message{
+        padding: 20% 0;
+    }
+    .form_bg{
+        padding: 10% 0;
+    }
+    .main_section{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+}

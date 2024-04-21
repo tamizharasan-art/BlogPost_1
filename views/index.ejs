@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/project.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <%- include('partials/header.ejs') %>
+        
+        <!-- body section  -->
+
+        <% if (locals.posts) {%>
+            
+            <section class="main_section">
+                <% posts.forEach(element => {%>
+            <div class="card_container">
+                <div class="image_container">
+                    <img src="<%= element.image %>" alt="img" class="player_img">
+                </div>
+                <h1 class="player_name"><%= element.name %></h1>
+                <h3 class="player_description"><%= element.description %></h3>
+                <div class="button_container">
+                    <button class="edit_button common_button">Edit  <i class="fa-solid fa-pencil"></i></button>
+                    <button class="delete_button common_button">Delete  <i class="fa-regular fa-trash-can"></i></button>
+                </div>
+            </div>
+            <% }); %>
+            </section>
+           
+        <% } else{%>
+                <div class="empty_message">
+                    <h1 class="empty_page_text">Post your favorite players record here>>></h1>
+                </div>
+            <% } %>
+        <%- include('partials/footer.ejs') %>
+    </div>
+</body>
+</html>
