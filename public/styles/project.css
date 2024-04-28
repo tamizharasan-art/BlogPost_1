@@ -35,7 +35,7 @@ body{
     font-size: 1.5em;
 }
 .common_button:hover{
-    padding: 15px;
+    padding: 10px;
     background-color: #F1CA7F;
 }
 .empty_page_text{

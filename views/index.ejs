@@ -24,8 +24,8 @@
                 <h1 class="player_name"><%= element.name %></h1>
                 <h3 class="player_description"><%= element.description %></h3>
                 <div class="button_container">
-                    <button class="edit_button common_button">Edit  <i class="fa-solid fa-pencil"></i></button>
-                    <button class="delete_button common_button">Delete  <i class="fa-regular fa-trash-can"></i></button>
+                    <a href="/edit/<%=element.id%>"><button class="edit_button common_button">Edit  <i class="fa-solid fa-pencil"></i></button></a>
+                    <a href="/delete/<%=element.id%>"><button class="delete_button common_button">Delete  <i class="fa-regular fa-trash-can"></i></button></a>
                 </div>
             </div>
             <% }); %>
